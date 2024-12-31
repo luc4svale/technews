@@ -1,0 +1,67 @@
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+
+.fs-md {
+  font-size: var(--fs-md);
+}
+
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw-semibold {
+  font-weight: var(--fw-semibold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-extrabold {
+  font-weight: var(--fw-extrabold);
+}
+
+.lh-135 {
+  line-height: var(--lh-135);
+}
+
+.lh-140 {
+  line-height: var(--lh-140);
+}
+
+.lh-145 {
+  line-height: var(--lh-145);
+}
+
+.lh-160 {
+  line-height: var(--lh-160);
+}
+
+.text-sm {
+  font: var(--text-sm);
+}
+
+.text-md {
+  font: var(--text-md);
+}
+
+.text-lg {
+  font: var(--text-lg);
+}
+
+.text-xl {
+  font: var(--text-xl);
+}
+
+.text-2xl {
+  font: var(--text-2xl);
+}
