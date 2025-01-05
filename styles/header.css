@@ -1,0 +1,72 @@
+body > header {
+  & nav#primary-menu {
+    padding-block: 1rem;
+
+    & .icon {
+      font-size: 1.25rem;
+    }
+
+    & [src*="logo"] {
+      width: 6.25rem;
+      height: 1.25rem;
+    }
+  }
+
+  & nav#secondary-menu {
+    padding-block: 0.875rem;
+    border-block: 1px solid var(--stroke-color);
+    gap: 2rem;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      height: 0;
+    }
+
+    & a {
+      font: var(--text-md);
+      color: var(--text-color-secondary);
+      white-space: nowrap;
+
+      &:hover {
+        color: var(--brand-color-light);
+      }
+    }
+  }
+}
+
+
+@media (48rem <= width < 64rem) {
+  body > header {
+    & nav#primary-menu {
+      padding-block: 1.125rem;
+  
+      & [src*="logo"] {
+        width: 8.125rem;
+        height: 1.625rem;
+      }
+    }
+
+    & nav#secondary-menu {
+      gap: unset;
+      overflow-x: auto;
+    }
+  }
+}
+
+
+@media ( width >= 64rem) {
+  body > header {
+    & nav#primary-menu {
+      padding-block: 1.25rem;
+  
+      & [src*="logo"] {
+        width: 10rem;
+        height: 2rem;
+      }
+    }
+    & nav#secondary-menu {
+      gap: unset;
+      overflow-x: auto;
+    }
+  }
+}

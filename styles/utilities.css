@@ -1,3 +1,20 @@
+.container {
+  --max-width: 47.9375rem;
+  --padding-inline: 1rem;
+
+  max-width: var(--max-width);
+  padding-inline: var(--padding-inline);
+  margin-inline: auto;
+}
+
+.md-block {
+  display: none;
+}
+
+.lg-block {
+  display:none
+}
+
 .fs-lg {
   font-size: var(--fs-lg);
 }
@@ -64,4 +81,50 @@
 
 .text-2xl {
   font: var(--text-2xl);
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-0\.5 {
+  gap: 0.5rem;
+}
+
+.color-secondary {
+  color: var(--text-color-secondary);
+}
+
+@media (48rem <= width < 64rem) {
+  .container {
+    --max-width: 63.9375rem;
+    --padding-inline: 1.5rem;
+  }
+
+  .md-block {
+    display: block;
+  }
+}
+
+@media (width >= 64rem) {
+  .container {
+    --max-width: 80rem;
+    --padding-inline: 2rem;
+  }
+
+  .md-block {
+    display: block;
+  }
+
+  .lg-block {
+    display: block;
+  }
 }

@@ -8,8 +8,8 @@
 
 :root {
   /* Brand colors */
-  --brand-color-primary: #60A5FA;
-  --brand-colors-secondary: #1D4ED8;
+  --brand-color-light: #60A5FA;
+  --brand-color-dark: #1D4ED8;
 
   /* Base colors */
   --bg-color: #0F172A;

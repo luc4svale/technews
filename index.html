@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechNews | Portal de notícias</title>
   <link rel="stylesheet" href="./styles/index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+
+  <header>
+    <nav id="primary-menu" class="container flex justify-between items-center">
+      <dropdown-menu class="flex items-center gap-0.5">
+        <i class="ph-bold ph-list icon"></i>
+        <span class="fs-md fw-bold md-block lg-block">Menu</span>
+      </dropdown-menu>
+
+      <img src="./assets/logo.png" alt="Logo Technews">
+
+      <search-menu class="flex items-center gap-0.5">
+        <span class="fs-md fw-bold md-block lg-block">Buscar</span>
+        <i class="ph-bold ph-magnifying-glass icon"></i>
+      </search-menu>
+    </nav>
+
+    <nav id="secondary-menu" class="container flex items-center justify-between">
+      <a href="#">Inteligência Artificial</a>
+      <a href="#">Blockchain</a>
+      <a href="#">Hologramas</a>
+      <a href="#">Internet</a>
+      <a href="#">Vestíveis</a>
+      <a href="#">Realidade Aumentada</a>
+      <a href="#">Realidade Virtual</a>
+    </nav>
+  </header>
+
+
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </body>
 </html>
