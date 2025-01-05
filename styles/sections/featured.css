@@ -2,6 +2,7 @@ section#featured {
   grid-area: featured;
 
   & .card {
+    height: 12.5rem;
     position: relative;
     border-radius: 0.25rem;
     overflow: hidden;
@@ -46,14 +47,13 @@ section#featured {
 
     & .card {
       & figcaption {
-        padding: 2.25rem 1.25rem 1.25rem;
+        padding: 2.25rem 1rem 1rem;
       }
 
       &.main-card {
-        height: auto;
 
         & figcaption {
-          padding: 2.25rem 1.5rem 1.5rem;
+          padding: 2.25rem 1.25rem 1.25rem;
         }
 
       }
@@ -67,7 +67,7 @@ section#featured {
 
 @media (width >= 64rem) {
   section#featured { 
-    grid-auto-flow: column;
+    grid-template-columns: 38rem 1fr;
 
     & .card {
       & figcaption {
@@ -75,10 +75,8 @@ section#featured {
       }
 
       &.main-card {
-        height: auto;
-
         & figcaption {
-          padding: 4.5rem 1.5rem 1.5rem;
+          padding: 3.75rem 1.5rem 1.5rem;
         }
       }
     }
