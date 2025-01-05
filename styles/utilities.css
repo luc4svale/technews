@@ -87,6 +87,14 @@
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -95,8 +103,16 @@
   justify-content: space-between;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .gap-0\.5 {
   gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
 }
 
 .color-secondary {

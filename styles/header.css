@@ -17,6 +17,7 @@ body > header {
     border-block: 1px solid var(--stroke-color);
     gap: 2rem;
     overflow-x: scroll;
+    scrollbar-width: none;
 
     &::-webkit-scrollbar {
       height: 0;

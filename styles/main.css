@@ -1,0 +1,20 @@
+body > main {
+  margin-block: 1rem 2.5rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "featured"
+    "weekly"
+    "ai"
+    "aside";
+  row-gap: 2rem;
+
+  & content-tag {
+    width: fit-content;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    font: var(--fw-medium) 0.625rem/1.2 var(--ff-archivo);
+    letter-spacing: 0.04em;
+    background-color: var(--brand-color-dark);
+  }
+}

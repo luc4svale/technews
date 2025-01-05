@@ -1,0 +1,90 @@
+section#featured {
+  grid-area: featured;
+
+  & .card {
+    position: relative;
+    border-radius: 0.25rem;
+    overflow: hidden;
+
+    & img {
+      height: 100%;
+      width: 100%;
+    }
+
+    & figcaption {
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 2.25rem 0.75rem 0.75rem;
+      background: linear-gradient(to bottom, #02061700 0%, #020617 100%);
+
+      & h3 {
+        max-height: 6rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical; 
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+      }
+    }
+
+    &.main-card {
+      height: 26rem;
+
+      & figcaption {
+        height: 50%;
+        padding: 2rem 1rem 1rem;
+      }
+    }
+  }
+}
+
+@media (48rem <= width < 64rem) {
+  section#featured { 
+
+    & .card {
+      & figcaption {
+        padding: 2.25rem 1.25rem 1.25rem;
+      }
+
+      &.main-card {
+        height: auto;
+
+        & figcaption {
+          padding: 2.25rem 1.5rem 1.5rem;
+        }
+
+      }
+    }
+
+     & div.card-group {
+      grid-template-columns: repeat(2, 1fr);
+     }
+  }
+}
+
+@media (width >= 64rem) {
+  section#featured { 
+    grid-auto-flow: column;
+
+    & .card {
+      & figcaption {
+        padding: 2.25 0.75rem 0.75rem;
+      }
+
+      &.main-card {
+        height: auto;
+
+        & figcaption {
+          padding: 4.5rem 1.5rem 1.5rem;
+        }
+      }
+    }
+
+     & div.card-group {
+      grid-template-columns: repeat(2, 1fr);
+     }
+  }
+}
