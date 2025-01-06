@@ -59,7 +59,7 @@ section#featured {
       }
     }
 
-     & div.card-group {
+     & div.cards-group {
       grid-template-columns: repeat(2, 1fr);
      }
   }
@@ -67,7 +67,7 @@ section#featured {
 
 @media (width >= 64rem) {
   section#featured { 
-    grid-template-columns: 38rem 1fr;
+    grid-template-columns: 1.027027fr 1fr;
 
     & .card {
       & figcaption {
@@ -81,7 +81,7 @@ section#featured {
       }
     }
 
-     & div.card-group {
+     & div.cards-group {
       grid-template-columns: repeat(2, 1fr);
      }
   }

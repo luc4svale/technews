@@ -1,0 +1,17 @@
+section {
+  & header {
+    border-top: 1px solid var(--stroke-color);
+    padding-block: 0.75rem 1.5rem;
+    color: var(--text-color-secondary);
+
+    & a {
+      & .icon {
+        font-size: 1rem
+      }
+
+      &:hover {
+        color: var(--brand-color-light);
+      }
+    }
+  }
+}
