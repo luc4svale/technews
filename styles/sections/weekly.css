@@ -20,7 +20,6 @@ section#weekly {
       }
 
       & figcaption {
-        max-height: 4.125rem;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
@@ -33,15 +32,7 @@ section#weekly {
   }
 }
 
-@media (48rem <= width < 64rem) {
-  section#weekly {
-    & .cards-group {
-      gap: 1rem;
-    }
-  }
-}
-
-@media (width >= 64rem) {
+@media (width >= 48rem) {
   section#weekly {
     & .cards-group {
       gap: 1rem;

@@ -1,7 +1,7 @@
 body > main {
   margin-block: 1rem 2.5rem;
   grid-template-columns: 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     "featured"
     "weekly"
     "ai"
@@ -20,13 +20,11 @@ body > main {
 }
 
 
-@media (48rem <= width < 64rem) {
-
+@media (width >= 48rem) {
   body > main {
     margin-block: 2rem 3.75rem;
     row-gap: 2.5rem;
   }
-
 }
 
 
@@ -34,13 +32,11 @@ body > main {
   body > main {
     margin-block: 2.5rem 5rem;
     grid-template-columns: 1.42622951fr 1fr;
-    grid-template-areas: 
-    "featured featured"
-    "weekly weekly"
-    "ai aside";
+    grid-template-areas:
+      "featured featured"
+      "weekly weekly"
+      "ai aside";
     row-gap: 5rem;
     column-gap: 2rem;
   }
-
 }
-

@@ -20,14 +20,12 @@ section#featured {
       background: linear-gradient(to bottom, #02061700 0%, #020617 100%);
 
       & h3 {
-        max-height: 6rem;
         display: -webkit-box;
-        -webkit-box-orient: vertical; 
+        -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
         line-clamp: 3;
         overflow: hidden;
         text-overflow: ellipsis;
-
       }
     }
 
@@ -42,8 +40,8 @@ section#featured {
   }
 }
 
-@media (48rem <= width < 64rem) {
-  section#featured { 
+@media (width >= 48rem) {
+  section#featured {
 
     & .card {
       & figcaption {
@@ -51,22 +49,20 @@ section#featured {
       }
 
       &.main-card {
-
         & figcaption {
           padding: 2.25rem 1.25rem 1.25rem;
         }
-
       }
     }
 
-     & div.cards-group {
+    & div.cards-group {
       grid-template-columns: repeat(2, 1fr);
-     }
+    }
   }
 }
 
 @media (width >= 64rem) {
-  section#featured { 
+  section#featured {
     grid-template-columns: 1.027027fr 1fr;
 
     & .card {
@@ -80,9 +76,5 @@ section#featured {
         }
       }
     }
-
-     & div.cards-group {
-      grid-template-columns: repeat(2, 1fr);
-     }
   }
 }

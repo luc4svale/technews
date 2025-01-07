@@ -35,12 +35,11 @@ body > header {
   }
 }
 
-
-@media (48rem <= width < 64rem) {
+@media (width >= 48rem) {
   body > header {
     & nav#primary-menu {
       padding-block: 1.125rem;
-  
+
       & [src*="logo"] {
         width: 8.125rem;
         height: 1.625rem;
@@ -54,20 +53,15 @@ body > header {
   }
 }
 
-
-@media ( width >= 64rem) {
+@media (width >= 64rem) {
   body > header {
     & nav#primary-menu {
       padding-block: 1.25rem;
-  
+
       & [src*="logo"] {
         width: 10rem;
         height: 2rem;
       }
-    }
-    & nav#secondary-menu {
-      gap: unset;
-      overflow-x: auto;
     }
   }
 }

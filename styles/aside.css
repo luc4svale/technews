@@ -21,11 +21,10 @@ body > main > aside {
   }
 }
 
-@media (48rem <= width < 64rem) {
+@media (width >=48rem) {
   body > main > aside {
-    & a img[src*="ads"] {
+    & a img[src*="ads-tablet"] {
       width: 100%;
-      object-fit: cover;
     }
   }
 }
