@@ -1,0 +1,39 @@
+body > main > aside {
+  grid-area: aside;
+
+  & a:has(img[src*="ads"]) {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.25rem;
+
+    & button {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      padding: 0.125rem;
+      border: none;
+
+      & .icon {
+        font-size: 1rem;
+        color: var(--brand-color-light);
+      }
+    }
+  }
+}
+
+@media (48rem <= width < 64rem) {
+  body > main > aside {
+    & a img[src*="ads"] {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (width >= 64rem) {
+  body > main > aside {
+    & a img[src*="ads"] {
+      height: 17.5rem;
+    }
+  }
+}

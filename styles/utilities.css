@@ -99,6 +99,10 @@
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -119,6 +123,10 @@
   gap: 1rem;
 }
 
+.gap-2 {
+  gap: 2rem;
+}
+
 .color-secondary {
   color: var(--text-color-secondary);
 }
@@ -131,6 +139,10 @@
 
   .md-block {
     display: block;
+  }
+
+  .md-none {
+    display: none;
   }
 
   .md-col-2 {
@@ -150,6 +162,10 @@
 
   .lg-block {
     display: block;
+  }
+
+  .lg-none {
+    display: none;
   }
 
   .lg-col-4 {

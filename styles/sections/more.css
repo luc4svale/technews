@@ -1,0 +1,26 @@
+section#more {
+  & .cards-group {
+
+    & .card {
+      gap: 0.9375rem;
+
+      & img {
+        width: 4.5rem;
+        aspect-ratio: 1 / 1;
+      }
+
+      & figcaption {
+        & h3 {
+          margin-top: 0.5rem;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          line-clamp: 2;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font: var(--fw-regular) var(--fs-sm)/var(--lh-140) var(--ff-archivo-black);
+        }
+      }
+    }
+  }
+}
