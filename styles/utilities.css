@@ -97,6 +97,14 @@
   display: none;
 }
 
+.md-block-only {
+  display: none;
+}
+
+.md-none-only {
+  display: block;
+}
+
 .lg-block {
   display: none
 }
@@ -155,9 +163,19 @@
     display: block;
   }
 
+  .md-block-only {
+    display: block;
+  }
+
   .md-none {
     display: none;
   }
+
+  .md-none-only {
+    display: none;
+  }
+
+
 
   .md-col-2 {
     grid-template-columns: repeat(2, 1fr);
@@ -177,6 +195,15 @@
   .lg-none {
     display: none;
   }
+
+  .md-block-only {
+    display: none;
+  }
+
+  .md-none-only {
+    display: block;
+  }
+
 
   .lg-col-4 {
     grid-template-columns: repeat(4, 1fr);
